@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CNPJ.Processing.Core\CNPJ.Processing.Core.csproj" />
+    <ProjectReference Include="..\CNPJ.Processing.Domain\CNPJ.Processing.Domain.csproj" />
+    <ProjectReference Include="..\CNPJ.Processing.Infra\CNPJ.Processing.Infra.csproj" />
+  </ItemGroup>
+
+</Project>

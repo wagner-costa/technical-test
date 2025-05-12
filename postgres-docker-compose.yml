@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=postgres 
+      - POSTGRES_PASSWORD=X5HBcUP47Ca1JfUER
+      - POSTGRES_DB=nstech-mdm-technical
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - postgres-net
+    restart: always
+
+volumes:
+  postgres-data:
+
+networks:
+  postgres-net:
+    driver: bridge
